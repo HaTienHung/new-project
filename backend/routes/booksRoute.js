@@ -19,6 +19,7 @@ router.post("/", async (request, response) => {
       title: request.body.title,
       author: request.body.author,
       publishYear: request.body.publishYear,
+      // price: request.body.price,
     };
 
     const book = await Book.create(newBook);
